@@ -43,10 +43,10 @@ def contains_char(word: str, letter: str) -> None:
     if word[4] == letter:
         print(letter + " found at index 4")
         count = count + 1
-    if count == 0:
-        print("No instances of " + letter + " found in " + word)
     if count > 0:
         print(str(count) + " instances of " + letter + " found in " + word)
+    if count == 0:
+        print("No instances of " + letter + " found in " + word)
 
 
 def main() -> None:
@@ -55,3 +55,5 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+main()
