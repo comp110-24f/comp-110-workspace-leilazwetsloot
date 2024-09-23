@@ -3,7 +3,7 @@
 __author__ = "730776566"
 
 
-def input_word() -> str:  # type: ignore #still recieving an error on return type but runs fine
+def input_word() -> str:  # type: ignore #still recieving an error on type but it fine
     chosen_word: str = input("Enter a 5-character word: ")
     if len(chosen_word) != 5:  # had to remember operator
         print("Error: Word must contain 5 characters.")
