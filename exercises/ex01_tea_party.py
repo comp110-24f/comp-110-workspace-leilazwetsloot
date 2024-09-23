@@ -8,7 +8,7 @@ def main_planner(guests: int) -> None:
     print(("A Cozy Tea Party for ") + str(guests) + (" People!"))
     tea_bag_number: int = tea_bags(
         people=guests
-    )  # went to office hours to understand that I needed to add local variables to function
+    )  # went to office hours to understand that I needed to add local variables to code
     treat_number: int = treats(people=guests)
     print(("Tea Bags: ") + str(tea_bag_number))
     print(("Treats: ") + str(treat_number))
