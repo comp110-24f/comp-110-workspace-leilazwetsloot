@@ -15,7 +15,7 @@ def input_guess(
     return guess  # originally "print" but was casuing an assertion error within main
 
 
-def contains_char(secret_word: str, char_guess: str) -> bool:  # type: ignore
+def contains_char(secret_word: str, char_guess: str) -> bool:
     """Test each index of the secret word for the guessed character"""
     assert len(char_guess) == 1  # from example, assumes char_guess is 1 char long
     index: int = 0
