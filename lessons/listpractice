@@ -1,0 +1,8 @@
+my_numbers: list[float] = list()
+my_numbers.append(1.5)
+
+game_points: list[int] = [102, 86, 94]
+game_points[1] = 72
+print(game_points)
+print(game_points[1])
+game_points[4]

@@ -4,6 +4,7 @@ __author__ = "730776566"
 
 
 def input_word() -> str:  # type: ignore #still recieving an error on type but it fine
+    """Recieves input of chosen word and checks eligibility"""
     chosen_word: str = input("Enter a 5-character word: ")
     if len(chosen_word) != 5:  # had to remember operator
         print("Error: Word must contain 5 characters.")
@@ -13,8 +14,9 @@ def input_word() -> str:  # type: ignore #still recieving an error on type but i
 
 
 def input_letter() -> str:  # type: ignore
+    """Recieves input of chosen letter and checks eligibility"""
     chosen_letter: str = input("Enter a single character: ")
-    if len(chosen_letter) != 1:
+    if len(chosen_letter) != 1:  # if longer than one
         print("Error: Character must be a single character.")
         exit()
     elif len(chosen_letter) == 1:
@@ -22,6 +24,7 @@ def input_letter() -> str:  # type: ignore
 
 
 def contains_char(word: str, letter: str) -> None:
+    """Calculates how many times a letter is present in a word"""
     count: int = 0  # originally added to many variables
     print(
         "Searching for " + letter + " in " + word
